@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm i && webpack-dev-server --mode development --port 3000 --open --hot",
-    "build": "npm i && webpack-dev-server --mode production"
+    "build": "npm i && webpack-dev-server --mode production",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.5.0",
     "react-dust": "^0.1.0",
     "react-redux": "^8.0.2",
