@@ -10,8 +10,12 @@ import Error from './common/ErrorBoundary';
 import store from './redux/store';
 import AppContainer from './AppContainer';
 
+const vendorContext = require.context('./public/assets/vendor', false, /\.js$/);
+vendorContext.keys().forEach(vendorContext);
+
 const container = document.getElementById("root");
 const root = createRoot(container);
+
 if(container) {
   root.render(
     <Provider store={store}>

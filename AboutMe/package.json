@@ -1,13 +1,14 @@
 {
+  "homepage": "https://anhlongphan.github.io/AboutMe",
   "name": "my-profile",
   "version": "1.0.0",
   "description": "this is my profile",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm i && webpack-dev-server --mode development --port 3000 --open --hot",
-    "build": "npm i && webpack-dev-server --mode production",
-    "deploy": "npm run build && gh-pages -d build"
+    "build": "npm i && webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",

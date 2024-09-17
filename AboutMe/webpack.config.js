@@ -2,12 +2,24 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: 'production',
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   entry: {
-    'root' : "./src/index.js",
+    'root' : "./src/index.js"
   },
   output: {
-    path: path.join(__dirname, "/build"), // Thư mục chứa file được build ra
-    filename: "bundle.js" // Tên file được build ra
+    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].[contenthash].js",
+    // publicPath: '/'
+  },
+  optimization: {
+    splitChunks: {
+            chunks: 'all'
+        }
   },
   module: {
     rules: [
