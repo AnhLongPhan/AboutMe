@@ -1,3 +1,9 @@
 node_modules
 build/*
 dist/*
+
+# vendor files copied outside of vendor/ directory
+public/assets/css/bootstrap*
+public/assets/css/aos*
+public/assets/js/bootstrap*
+public/assets/js/aos*
