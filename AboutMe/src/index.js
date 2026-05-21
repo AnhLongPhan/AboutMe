@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 
 import './common/Prototype';
-import './common/DustHelper';
 
 import Error from './common/ErrorBoundary';
 
