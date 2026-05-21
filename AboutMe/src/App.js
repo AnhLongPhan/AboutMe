@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
 import './common/Prototype';
+import './common/DustHelper';
 
 import {  clearData } from './redux/actions';
 
