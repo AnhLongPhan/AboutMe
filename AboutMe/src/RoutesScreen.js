@@ -8,7 +8,7 @@ class RoutesScreen extends Component {
     render() {
         let { history } = this.props;
         return (
-            <Router basename="/AboutMe" history={history}>
+            <Router basename={process.env.NODE_ENV === 'production' ? '/AboutMe' : ''} history={history}>
                 <Routes>
                     <Route path="/" exact element={<Home/>}/>
                     <Route path="/login" element={<Login/>} />

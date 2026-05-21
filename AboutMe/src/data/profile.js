@@ -2,11 +2,14 @@
 // PROFILE DATA — chỉnh sửa nội dung tại đây
 // ============================================================
 
+import avatarImg from '../../public/assets/img/person/leader-img.jpg';
+
 export const personal = {
   name: 'Phan Long Ánh',
   title: 'Senior Java Developer & Full-stack Developer',
   quote: '"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."',
   quoteAuthor: '— Albert Einstein —',
+  avatar: avatarImg,
   location: 'Hiep Binh Phuoc, Thu Duc, Ho Chi Minh City',
   email: 'longanhphan.qn@gmail.com',
   phone: '+84 393 756 388',

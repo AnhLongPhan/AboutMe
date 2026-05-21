@@ -9,7 +9,9 @@ class Header extends React.Component {
         <div className="container d-flex justify-content-between align-items-center">
 
           <div id="logo">
-            <a href="#"><img className="logo-css" width="100" height="93" src={logo} alt=""/></a>
+            <a href="#hero" className="logo-wrapper">
+              <img className="logo-css" src={logo} alt="Lucas Phan" />
+            </a>
           </div>
 
           <nav id="navbar" className="navbar">
