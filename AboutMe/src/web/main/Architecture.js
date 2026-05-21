@@ -1,43 +1,5 @@
 import React from 'react';
-
-const architectures = [
-  {
-    title: 'Enterprise Web Management',
-    type: 'MVC / Full-stack',
-    color: '#e74c3c',
-    icon: 'bi bi-layers',
-    description: 'Multi-layer web app managing real estate contracts end-to-end. Java Spring Boot backend with Thymeleaf + React frontend, MySQL persistence, and load-balanced deployment.',
-    layers: ['React / Thymeleaf', 'Spring Boot (REST)', 'MySQL', 'GCP Load Balancer'],
-    project: 'Daijin Systems'
-  },
-  {
-    title: 'ETL Data Pipeline',
-    type: 'Cloud Data Engineering',
-    color: '#f39c12',
-    icon: 'bi bi-diagram-3',
-    description: 'Automated pipeline syncing transactional data from MySQL to Google BigQuery for real-time reporting. Orchestrated via Cloud Scheduler and Cloud Functions.',
-    layers: ['MySQL (Source)', 'Cloud Functions', 'Cloud Scheduler', 'BigQuery (Sink)'],
-    project: 'ETL Systems'
-  },
-  {
-    title: 'RESTful API Services',
-    type: 'Backend Microservices',
-    color: '#3498db',
-    icon: 'bi bi-cloud-arrow-up',
-    description: 'Stateless REST APIs managing workflow approval states and Google Drive file operations. Designed for scalability with scheduled jobs for data synchronization.',
-    layers: ['Java REST API', 'Google Drive API', 'Cloud Scheduler', 'MySQL'],
-    project: 'Workflow API · DrivePlus API'
-  },
-  {
-    title: 'Automation & Reporting',
-    type: 'Scripting / Low-code',
-    color: '#2ecc71',
-    icon: 'bi bi-gear-wide-connected',
-    description: 'Google Apps Scripts automation for file management and spreadsheet reporting across Drive folders. Vue.js frontend for sales department data access.',
-    layers: ['Vue.js / Vuex', 'Google Apps Scripts', 'Google Drive', 'Spreadsheet Reports'],
-    project: 'BukkenShiryo · RuijuBukken'
-  }
-];
+import { architectures } from '../../data/profile';
 
 class Architecture extends React.Component {
   render() {

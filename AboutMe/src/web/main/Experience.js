@@ -1,41 +1,5 @@
 import React from 'react';
-
-const timeline = [
-  {
-    period: '08/2018 – 04/2024',
-    role: 'Senior Java Developer → Full-stack → Team Leader',
-    company: 'rakumo Co., Ltd',
-    type: 'work',
-    highlights: [
-      'Led end-to-end development of Daijin Systems (real estate management)',
-      'Managed teams of 2–4 members, client communication and requirements gathering',
-      'Built ETL pipeline, Workflow API and DrivePlus API on Google Cloud',
-      'Improved search performance by 30%; applied load balancing and Redis caching',
-      'Recipient of the MVP award (2019–2024)',
-    ]
-  },
-  {
-    period: '09/2016 – 07/2018',
-    role: 'Java Developer',
-    company: 'FUJINET SYSTEMS JSC',
-    type: 'work',
-    highlights: [
-      'Specialized in backend development with robust and scalable Java solutions',
-      'Collaborated with cross-functional teams for project execution',
-      'Continuously improving through self-study and professional development',
-    ]
-  },
-  {
-    period: '10/2012 – 01/2017',
-    role: 'B.Sc. Information Technology',
-    company: 'Ho Chi Minh City University of Science',
-    type: 'edu',
-    highlights: [
-      'Major: Information Technology',
-      'Oracle Certified: Java SE 8 Programmer II (2016)',
-    ]
-  }
-];
+import { workHistory as timeline } from '../../data/profile';
 
 const dot = { work: { bg: '#2dc997', icon: 'bi bi-briefcase' }, edu: { bg: '#3498db', icon: 'bi bi-mortarboard' } };
 

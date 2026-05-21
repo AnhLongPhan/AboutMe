@@ -1,42 +1,5 @@
 import React from 'react';
-
-const skillGroups = [
-  {
-    category: 'Backend',
-    color: '#e74c3c',
-    skills: [
-      { name: 'Java',        level: 95, badge: 'Expert',       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
-      { name: 'Spring Boot', level: 90, badge: 'Expert',       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
-      { name: 'Python',      level: 65, badge: 'Intermediate', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-      { name: 'NodeJS',      level: 65, badge: 'Intermediate', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-    ]
-  },
-  {
-    category: 'Frontend',
-    color: '#3498db',
-    skills: [
-      { name: 'HTML / CSS',  level: 80, badge: 'Advanced',     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
-      { name: 'Bootstrap',   level: 80, badge: 'Advanced',     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
-      { name: 'ReactJS',     level: 60, badge: 'Intermediate', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-      { name: 'VueJS / Vuex',level: 55, badge: 'Basic',        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
-    ]
-  },
-  {
-    category: 'Database',
-    color: '#f39c12',
-    skills: [
-      { name: 'MySQL',       level: 90, badge: 'Expert',       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-    ]
-  },
-  {
-    category: 'Cloud & Tools',
-    color: '#2ecc71',
-    skills: [
-      { name: 'Google Cloud',       level: 75, badge: 'Advanced',     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
-      { name: 'Google App Scripts', level: 70, badge: 'Advanced',     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg' },
-    ]
-  }
-];
+import { techStack as skillGroups } from '../../data/profile';
 
 const badgeColor = {
   Expert: '#27ae60',

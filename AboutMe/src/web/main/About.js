@@ -1,25 +1,7 @@
 import React from 'react';
+import { about } from '../../data/profile';
 
-const traits = [
-  {
-    id: 1,
-    icon: 'bi bi-person-check',
-    title: 'Personality',
-    description: 'Strong sense of responsibility and attention to detail. Comfortable working independently or as part of a team. Adaptable and thrive in fast-paced environments.'
-  },
-  {
-    id: 2,
-    icon: 'bi bi-lightbulb',
-    title: 'Mindset',
-    description: 'Eager learner, always seeking to acquire new skills and knowledge. Not naturally excellent but can perform acceptable presentations. Willing to learn new techniques.'
-  },
-  {
-    id: 3,
-    icon: 'bi bi-heart',
-    title: 'Hobbies',
-    description: 'Reading books, Traveling, Coffee lover.'
-  }
-];
+const { objective, traits } = about;
 
 class About extends React.Component {
   render() {
@@ -30,12 +12,7 @@ class About extends React.Component {
 
             <div className="col-lg-6 content order-lg-1 order-2">
               <h2 className="title">About Me</h2>
-              <p>
-                Seeking a challenging Senior Java Developer role within a dynamic and professional environment
-                where I can apply my extensive skills and experience to drive impactful contributions.
-                Eager to further expand my expertise in software development while fostering a
-                collaborative and conducive working environment.
-              </p>
+              <p>{objective}</p>
 
               {traits.map(item => (
                 <div className="icon-box" data-aos="fade-up" data-aos-delay="100" key={item.id}>

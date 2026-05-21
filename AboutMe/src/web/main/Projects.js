@@ -1,4 +1,5 @@
 import React from 'react';
+import { projects } from '../../data/profile';
 
 const typeConfig = {
   web:   { label: 'Web App',       icon: 'bi bi-globe2',   gradient: 'linear-gradient(135deg,#e74c3c,#c0392b)' },
@@ -7,71 +8,6 @@ const typeConfig = {
   other: { label: 'Data / Cloud',  icon: 'bi bi-cloud-arrow-up', gradient: 'linear-gradient(135deg,#27ae60,#1abc9c)' }
 };
 
-const projects = [
-  {
-    type: 'web',
-    name: 'Daijin Systems',
-    description: 'An information management system for managing, searching, and editing details of real estate purchase contracts, transaction expenses, and loan management. Evolved from member role to Team Leader over 6 years.',
-    tech: ['Java', 'Spring Boot', 'Thymeleaf', 'ReactJS', 'MySQL', 'Maven'],
-    role: 'Senior Java Developer → Team Leader',
-    period: '10/2018 – 04/2024',
-    scale: '4 members'
-  },
-  {
-    type: 'api',
-    name: 'Workflow API',
-    description: 'Manages all states and processes of the system. Applied to oversee the approval process of purchase contract profiles, with scheduled jobs for automation.',
-    tech: ['Java', 'Spring Boot', 'Google Cloud Services', 'MySQL'],
-    role: 'Backend Developer',
-    period: '11/2022 – 04/2024',
-    scale: '2 members'
-  },
-  {
-    type: 'api',
-    name: 'DrivePlus API',
-    description: 'API for uploading and managing files to Google Drive using the Google Drive API, with scheduled synchronization jobs for maintaining data consistency.',
-    tech: ['Java', 'Google Drive API', 'Google Cloud Services', 'MySQL'],
-    role: 'Backend Developer',
-    period: '11/2022 – 04/2024',
-    scale: '2 members'
-  },
-  {
-    type: 'other',
-    name: 'ETL Systems',
-    description: 'Synchronizes data from physical MySQL databases to Google BigQuery for real-time and scheduled reporting. Handles data standardization and cloud function orchestration.',
-    tech: ['Python', 'MySQL', 'BigQuery', 'Cloud Functions', 'Cloud Scheduler'],
-    role: 'Full-stack Developer',
-    period: '12/2022 – 07/2023',
-    scale: '3 members'
-  },
-  {
-    type: 'app',
-    name: 'BukkenShiryo App',
-    description: 'Web application for managing all project files on Google Drive folders. Allows sorting files according to predefined formats and synchronizing files for the sales department.',
-    tech: ['Google Apps Scripts', 'Vue.js', 'Vuex', 'HTML5', 'ES6'],
-    role: 'Backend Developer',
-    period: '12/2021 – 12/2022',
-    scale: '3 members'
-  },
-  {
-    type: 'other',
-    name: 'AutoResponse Systems',
-    description: 'Manages sales information websites, evaluates scores of attention-grabbing locations, ranks stores, and sends consultation requests to the stores closest to users.',
-    tech: ['Python', 'SQL Server', 'Google Cloud Services'],
-    role: 'Backend Developer',
-    period: '10/2022 – 04/2023',
-    scale: '3 members'
-  },
-  {
-    type: 'web',
-    name: 'RuijuBukkenKensaku',
-    description: 'Collects information from all sales files in Google Drive folders, aggregates and exports spreadsheet reports, making it easier to search for contract information.',
-    tech: ['NodeJS', 'Express', 'Google Cloud Services'],
-    role: 'Full-stack Developer',
-    period: '01/2022 – 06/2022',
-    scale: '3 members'
-  }
-];
 
 const Hexagon = ({ gradient, icon, size = 80 }) => (
   <div style={{ width: size, height: size, position: 'relative', flexShrink: 0 }}>

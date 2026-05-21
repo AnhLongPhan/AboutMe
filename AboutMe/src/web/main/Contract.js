@@ -1,31 +1,17 @@
 import React from 'react';
 import heroBg from '../../../public/assets/img/hero-bg.jpg';
+import { personal } from '../../data/profile';
 
 const contactItems = [
-  { icon: 'bi bi-geo-alt-fill', label: 'Location', value: 'Hiep Binh Phuoc, Thu Duc, Ho Chi Minh City' },
-  { icon: 'bi bi-envelope-fill', label: 'Email', value: 'longanhphan.qn@gmail.com', href: 'mailto:longanhphan.qn@gmail.com' },
-  { icon: 'bi bi-telephone-fill', label: 'Phone', value: '+84 393 756 388', href: 'tel:+84393756388' }
+  { icon: 'bi bi-geo-alt-fill',   label: 'Location', value: personal.location },
+  { icon: 'bi bi-envelope-fill',  label: 'Email',    value: personal.email, href: `mailto:${personal.email}` },
+  { icon: 'bi bi-telephone-fill', label: 'Phone',    value: personal.phone, href: `tel:${personal.phone.replace(/\s/g,'')}` }
 ];
 
 const socialLinks = [
-  {
-    href: 'https://www.facebook.com/longanhphan.qn',
-    label: 'Facebook',
-    icon: 'bi bi-facebook',
-    color: '#1877f2'
-  },
-  {
-    href: 'https://github.com/anhlongphan',
-    label: 'GitHub',
-    icon: 'bi bi-github',
-    color: '#333'
-  },
-  {
-    href: 'https://zalo.me/0393756388',
-    label: 'Zalo',
-    icon: null,
-    color: '#0190f3'
-  }
+  { href: personal.facebook, label: 'Facebook', icon: 'bi bi-facebook', color: '#1877f2' },
+  { href: personal.github,   label: 'GitHub',   icon: 'bi bi-github',   color: '#333'    },
+  { href: personal.zalo,     label: 'Zalo',     icon: null,              color: '#0190f3' },
 ];
 
 class Contract extends React.Component {
