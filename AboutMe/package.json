@@ -1,5 +1,5 @@
 {
-  "homepage": "https://anhlongphan.github.io/AboutMe",
+  "homepage": "https://github.com/PhanLongAnh/My-profile#readme",
   "name": "my-profile",
   "version": "1.0.0",
   "description": "this is my profile",
@@ -19,13 +19,13 @@
   "bugs": {
     "url": "https://github.com/PhanLongAnh/My-profile/issues"
   },
-  "homepage": "https://github.com/PhanLongAnh/My-profile#readme",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
     "@babel/preset-react": "^7.18.6",
     "axios": "^1.6.4",
     "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^14.0.0",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.1.1",
