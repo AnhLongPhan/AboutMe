@@ -7,7 +7,6 @@ import Achievement from './main/Achievement';
 import Experience from './main/Experience';
 import CallToAction from './main/CallToAction';
 import Projects from './main/Projects';
-import Team from './main/Team';
 import Contract from './main/Contract';
 import Footer from './Footer';
 
@@ -23,7 +22,6 @@ class Home extends React.Component {
           <Achievement />
           <CallToAction />
           <Projects />
-          <Team />
           <Contract/>
         </main>
         <Footer />

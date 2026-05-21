@@ -12,13 +12,9 @@ class Footer extends React.Component {
 
     <div className="container">
       <div className="copyright">
-        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+        &copy; {new Date().getFullYear()} <strong>Phan Long Ánh</strong>. All Rights Reserved.
       </div>
       <div className="credits">
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>

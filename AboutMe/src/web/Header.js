@@ -19,30 +19,7 @@ class Header extends React.Component {
               <li><a className="nav-link scrollto" href="#experience">Experience</a></li>
               <li><a className="nav-link scrollto" href="#achievement">Achievement</a></li>
               <li><a className="nav-link scrollto" href="#projects">Projects</a></li>
-              <li><a className="nav-link scrollto" href="#team">Team</a></li>
               <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-              <li className="dropdown"><a href="#"><span>Other</span> <i className="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Other 1</a></li>
-                  <li className="dropdown"><a href="#"><span>Other 2</span> <i className="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Other 1</a></li>
-                      <li><a href="#">Other 2</a></li>
-                      <li><a href="#">Other 3</a></li>
-                      <li><a href="#">Other 4</a></li>
-                      <li><a href="#">Other 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Other 3</a></li>
-                  <li><a href="#">Other 4</a></li>
-                  <li><a href="#">Other 5</a></li>
-                </ul>
-              </li>
-              <li>
-                <div className="nav-link scrollto" href="/login">
-                  <Link to="/login">Login</Link>
-                </div>
-              </li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
