@@ -2,11 +2,11 @@ import React from 'react';
 import '../../public/assets/css/style.css';
 import Header from './Header';
 import Hero from './Hero';
-import About from './main/About';
-import Achievement from './main/Achievement';
-import Experience from './main/Experience';
-import CallToAction from './main/CallToAction';
+import TechStack from './main/TechStack';
 import Projects from './main/Projects';
+import Metrics from './main/Metrics';
+import Architecture from './main/Architecture';
+import Experience from './main/Experience';
 import Contract from './main/Contract';
 import Footer from './Footer';
 
@@ -17,12 +17,12 @@ class Home extends React.Component {
         <Header />
         <Hero />
         <main id="main">
-          <About />
-          <Experience />
-          <Achievement />
-          <CallToAction />
+          <TechStack />
           <Projects />
-          <Contract/>
+          <Metrics />
+          <Architecture />
+          <Experience />
+          <Contract />
         </main>
         <Footer />
       </>
@@ -30,4 +30,4 @@ class Home extends React.Component {
   }
 }
 
-export default (Home);
+export default Home;
