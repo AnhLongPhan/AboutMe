@@ -80,6 +80,15 @@ export const techStack = [
       { name: 'Google Cloud',       level: 75, badge: 'Advanced', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
       { name: 'Google App Scripts', level: 70, badge: 'Advanced', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg' },
     ]
+  },
+  {
+    category: 'AI Tools',
+    color: '#8e44ad',
+    skills: [
+      { name: 'Claude (Anthropic)', level: 55, badge: 'Actively Learning', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/anthropic.svg' },
+      { name: 'GitHub Copilot',     level: 55, badge: 'Actively Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+      { name: 'OpenAI Codex',       level: 50, badge: 'Actively Learning', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/openai.svg' },
+    ]
   }
 ];
 

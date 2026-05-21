@@ -5,7 +5,8 @@ const badgeColor = {
   Expert: '#27ae60',
   Advanced: '#2980b9',
   Intermediate: '#e67e22',
-  Basic: '#95a5a6'
+  Basic: '#95a5a6',
+  'Actively Learning': '#8e44ad'
 };
 
 class TechStack extends React.Component {
