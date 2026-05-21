@@ -8,7 +8,7 @@ class RoutesScreen extends Component {
     render() {
         let { history } = this.props;
         return (
-            <Router history={history}>
+            <Router basename="/AboutMe" history={history}>
                 <Routes>
                     <Route path="/" exact element={<Home/>}/>
                     <Route path="/login" element={<Login/>} />
